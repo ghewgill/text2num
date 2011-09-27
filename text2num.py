@@ -69,13 +69,13 @@ def text2num(s):
     return n + g
     
 if __name__ == "__main__":
-    print text2num("one")
-    print text2num("twelve")
-    print text2num("seventy two")
-    print text2num("three hundred")
-    print text2num("twelve hundred")
-    print text2num("twelve thousand three hundred four")
-    print text2num("six million")
-    print text2num("six million four hundred thousand five")
-    print text2num("one hundred twenty three billion four hundred fifty six million seven hundred eighty nine thousand twelve")
-    print text2num("four decillion")
+    assert 1 == text2num("one")
+    assert 12 == text2num("twelve")
+    assert 72 == text2num("seventy two")
+    assert 300 == text2num("three hundred")
+    assert 1200 == text2num("twelve hundred")
+    assert 12304 == text2num("twelve thousand three hundred four")
+    assert 6000000 == text2num("six million")
+    assert 6400005 == text2num("six million four hundred thousand five")
+    assert 123456789012 == text2num("one hundred twenty three billion four hundred fifty six million seven hundred eighty nine thousand twelve")
+    assert 4000000000000000000000000000000000 == text2num("four decillion")
