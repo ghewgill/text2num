@@ -82,7 +82,7 @@ def text2num(s):
         x = Small.get(w, None)
         if x is not None:
             g += x
-        elif w == "hundred":
+        elif w == "hundred" and g != 0:
             g *= 100
         else:
             x = Magnitude.get(w, None)
